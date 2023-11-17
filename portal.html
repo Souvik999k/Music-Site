@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portal</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<link rel="stylesheet" href="bootstrap-5.0.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="portal.css">
+</head>
+<body>
+    <div class="container-fluid wrapper">
+        <div class="container">
+            <div class="row body">
+
+                <div class="col-md-2 col-12 h-100  bg-light side-bar">
+                <nav class="navbar navbar-expand-lg navbar-light flex-md-column  bg-light ">
+                  
+                      <a class="navbar-brand logo" href="#">Music Site</a>
+                    
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                        <div class="flex">
+                            <div class="menu ">
+                                <h6>Menu</h6>
+                            </div>
+                            <div class="navbar-nav flex-md-column ">
+                            
+                                <div class="home col-md-2 fs-5">
+                                    <i class="fa-solid fa-house icon"></i>
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </div>
+                                <div class="home col-md-2 fs-5">
+                                    <i class="fa-solid fa-list"></i>
+                                    <a class="nav-link" href="#">Categories</a>
+                                </div>
+                                <div class="home col-md-2 fs-5">
+                                    <i class="fa-solid fa-bookmark"></i>
+                                    <a class="nav-link" href="#">saved</a>
+                                </div>
+                                
+                               
+                             
+                            
+                            </div>
+                        </div>
+                        
+                      </div>
+                    
+                  </nav>
+
+                  <nav class="navbar navbar-expand-lg navbar-light flex-md-column bg-light py-5">
+                 
+                     
+                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav flex-md-column">
+                          <a class="nav-link disabled " aria-current="page" href="#">Playlist</a>
+                          <a class="nav-link active" href="#">Meditation</a>
+                          <a class="nav-link active " href="#">About space</a>
+                          <a class="nav-link active " href="#" tabindex="-1" aria-disabled="true">Bookcast</a>
+                          <a class="nav-link active " href="#">Design Practice</a>
+                          <a class="nav-link active " href="#">Motivating&Focus</a>
+                        </ul>
+                      </div>
+                   
+                  </nav>
+                </div>
+
+                <div class="col-12 col-md-10 right">
+                    <div class="row justify-content-around ">
+                    <div class="form-floating my-3 col-md-8 col-12 click">
+                        <input type="search" class="form-control input" id="search" placeholder="search">
+                        <!-- <label for="search">Search</label> -->
+                        <button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="dropdown d-flex justify-content-end">
+                            <div class="user">
+                                <div class="name pt-2">
+                                    <h6>Julia</h6>
+                                </div>
+                                <div >
+                            <a class="btn  dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" >
+                              <img src="photos/2.jpg" alt="portrait" class="img-fluid rounded-circle" style="width:50px;height:50px;object-fit: cover;">
+                            </a>
+                        </div>
+                        </div>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Action</a></li>
+                              <li><a class="dropdown-item" href="#">Another action</a></li>
+                              <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <h1 class="h1 fw-bold fs-1">For You</h1>
+                        <ul class="nav nav-tabs">
+                            <li class="nav-item">
+                              <a class="nav-link active"  href="#">Active</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link " href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="#">List</a>
+                            </li>
+                            
+                          </ul>
+                          <!-- <hr class="text-secondary my-3"> -->
+                    </div>
+                    <div class="row">
+                        <div class="carousel slide" data-bs-ride="carousel" id="card-slide">
+
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#card-slide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#card-slide" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              </div>
+                            
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="card-group gap-4  "data-bs-toggle="modal" data-bs-target="#modal">
+                                        <div class="card border-0 shadow picture">
+                                            <img src="photos/p1.png" alt="card-image h-50" class="img-fluid card-img-top rounded">
+                                            <div class="card-body">
+                                                <div class="card-title fw-bold fs-3">About Self Love</div>
+                                                <div class="card-text text-secondary-subtle">By Yaseema Booker</div>
+                                            </div>
+                                            <div class="wish rounded-circle bg-light position-absolute p-3">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </div>
+                                            <audio src="photos/SING1.mp3"></audio>
+                                        </div>
+                                        <div class="card border-0 shadow">
+                                            <img src="photos/p2.png" alt="card-image h-50" class="img-fluid card-img-top rounded">
+                                            <div class="card-body">
+                                                <div class="card-title fw-bold fs-3">About Self Love</div>
+                                                <div class="card-text text-secondary-subtle">By Yaseema Booker</div>
+                                            </div>
+                                            <div class="wish rounded-circle bg-light position-absolute p-3">
+                                                <i class="fa-solid fa-heart"></i>    
+                                            </div>
+                                            <audio src="photos/sing2.mp3"></audio>
+                                        </div>
+                                        <div class="card border-0 shadow">
+                                            <img src="photos/pic3.png" alt="card-image h-25" class="img-fluid card-img-top rounded">
+                                            <div class="card-body">
+                                                <div class="card-title fw-bold fs-3">About Self Love</div>
+                                                <div class="card-text text-secondary-subtle">By Yaseema Booker</div>
+                                            </div>
+                                            <div class="wish rounded-circle bg-light position-absolute p-3">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </div>
+                                            <audio src="photos/SING3.mp3"></audio>
+                                        </div>
+                                       
+                                   
+                                    </div>
+                                </div>
+
+                                <!-- --------------------------------------- -->
+
+                                <div class="carousel-item ">
+                                    <div class="card-group gap-4">
+                                        <div class="card border-0 shadow">
+                                            <img src="photos/p3.png" alt="card-image h-50" class="img-fluid card-img-top rounded">
+                                            <div class="card-body">
+                                                <div class="card-title fw-bold fs-3">About Self Love</div>
+                                                <div class="card-text text-secondary-subtle">By Yaseema Booker</div>
+                                            </div>
+                                            <div class="wish rounded-circle bg-light position-absolute p-3">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card border-0 shadow">
+                                            <img src="photos/p3.png" alt="card-image h-50" class="img-fluid card-img-top rounded">
+                                            <div class="card-body">
+                                                <div class="card-title fw-bold fs-3">About Self Love</div>
+                                                <div class="card-text text-secondary-subtle">By Yaseema Booker</div>
+                                            </div>
+                                            <div class="wish rounded-circle bg-light position-absolute p-3">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card border-0 shadow">
+                                            <img src="photos/p3.png" alt="card-image" h-25 class="img-fluid card-img-top rounded">
+                                            <div class="card-body">
+                                                <div class="card-title fw-bold fs-3">About Self Love</div>
+                                                <div class="card-text text-secondary-subtle">By Yaseema Booker</div>
+                                            </div>
+                                            <div class="wish rounded-circle bg-light position-absolute p-3">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </div>
+                                        </div>
+                                       
+                                   
+                                    </div>
+                                </div>
+
+                                <!-- ------------------------------------- -->
+
+                                <div class="carousel-item ">
+                                    <div class="card-group gap-4">
+                                        <div class="card border-0 shadow">
+                                            <img src="photos/p3.png" alt="card-image h-50" class="img-fluid card-img-top rounded">
+                                            <div class="card-body">
+                                                <div class="card-title fw-bold fs-3">About Self Love</div>
+                                                <div class="card-text text-secondary-subtle">By Yaseema Booker</div>
+                                            </div>
+                                            <div class="wish rounded-circle bg-light position-absolute p-3">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card border-0 shadow">
+                                            <img src="photos/p3.png" alt="card-image h-50" class="img-fluid card-img-top rounded">
+                                            <div class="card-body">
+                                                <div class="card-title fw-bold fs-3">About Self Love</div>
+                                                <div class="card-text text-secondary-subtle">By Yaseema Booker</div>
+                                            </div>
+                                            <div class="wish rounded-circle bg-light position-absolute p-3">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card border-0 shadow">
+                                            <img src="photos/p3.png" alt="card-image h-25" class="img-fluid card-img-top rounded">
+                                            <div class="card-body">
+                                                <div class="card-title fw-bold fs-3">About Self Love</div>
+                                                <div class="card-text text-secondary-subtle">By Yaseema Booker</div>
+                                            </div>
+                                            <div class="wish rounded-circle bg-light position-absolute p-3">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </div>
+                                        </div>
+                                       
+                                   
+                                    </div>
+                                </div>
+                            </div>
+
+                          
+
+
+
+
+
+
+                            <button class="carousel-control-prev" type="button" data-bs-target="#card-slide" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#card-slide" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                            
+                        </div>
+
+
+
+                        <div class="carousel slide" data-bs-ride="carousel" id="card-slide1">
+
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#card-slide1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#card-slide1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                              </div>
+                            
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="card-group gap-4">
+                                        <div class="card border-0 shadow">
+                                            <img src="photos/p1.png" alt="card-image h-50" class="img-fluid card-img-top rounded">
+                                            <div class="card-body">
+                                                <div class="card-title fw-bold fs-3">About Self Love</div>
+                                                <div class="card-text text-secondary-subtle">By Yaseema Booker</div>
+                                            </div>
+                                            <div class="wish rounded-circle bg-light position-absolute p-3">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card border-0 shadow">
+                                            <img src="photos/p2.png" alt="card-image h-50" class="img-fluid card-img-top rounded">
+                                            <div class="card-body">
+                                                <div class="card-title fw-bold fs-3">About Self Love</div>
+                                                <div class="card-text text-secondary-subtle">By Yaseema Booker</div>
+                                            </div>
+                                            <div class="wish rounded-circle bg-light position-absolute p-3">
+                                                <i class="fa-solid fa-heart"></i>    
+                                            </div>
+                                        </div>
+                                        <div class="card border-0 shadow">
+                                            <img src="photos/pic3.png" alt="card-image h-25" class="img-fluid card-img-top rounded">
+                                            <div class="card-body">
+                                                <div class="card-title fw-bold fs-3">About Self Love</div>
+                                                <div class="card-text text-secondary-subtle">By Yaseema Booker</div>
+                                            </div>
+                                            <div class="wish rounded-circle bg-light position-absolute p-3">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </div>
+                                        </div>
+                                       
+                                   
+                                    </div>
+                                </div>
+
+                                <!-- --------------------------------------- -->
+
+                                <div class="carousel-item ">
+                                    <div class="card-group gap-4">
+                                        <div class="card border-0 shadow">
+                                            <img src="photos/p3.png" alt="card-image h-50" class="img-fluid card-img-top rounded">
+                                            <div class="card-body">
+                                                <div class="card-title fw-bold fs-3">About Self Love</div>
+                                                <div class="card-text text-secondary-subtle">By Yaseema Booker</div>
+                                            </div>
+                                            <div class="wish rounded-circle bg-light position-absolute p-3">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card border-0 shadow">
+                                            <img src="photos/p3.png" alt="card-image h-50" class="img-fluid card-img-top rounded">
+                                            <div class="card-body">
+                                                <div class="card-title fw-bold fs-3">About Self Love</div>
+                                                <div class="card-text text-secondary-subtle">By Yaseema Booker</div>
+                                            </div>
+                                            <div class="wish rounded-circle bg-light position-absolute p-3">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card border-0 shadow">
+                                            <img src="photos/p3.png" alt="card-image" h-25 class="img-fluid card-img-top rounded">
+                                            <div class="card-body">
+                                                <div class="card-title fw-bold fs-3">About Self Love</div>
+                                                <div class="card-text text-secondary-subtle">By Yaseema Booker</div>
+                                            </div>
+                                            <div class="wish rounded-circle bg-light position-absolute p-3">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </div>
+                                        </div>
+                                       
+                                   
+                                    </div>
+                                </div>
+
+                                <!-- ------------------------------------- -->
+
+                                <div class="carousel-item ">
+                                    <div class="card-group gap-4">
+                                        <div class="card border-0 shadow">
+                                            <img src="photos/p3.png" alt="card-image h-50" class="img-fluid card-img-top rounded">
+                                            <div class="card-body">
+                                                <div class="card-title fw-bold fs-3">About Self Love</div>
+                                                <div class="card-text text-secondary-subtle">By Yaseema Booker</div>
+                                            </div>
+                                            <div class="wish rounded-circle bg-light position-absolute p-3">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card border-0 shadow">
+                                            <img src="photos/p3.png" alt="card-image h-50" class="img-fluid card-img-top rounded">
+                                            <div class="card-body">
+                                                <div class="card-title fw-bold fs-3">About Self Love</div>
+                                                <div class="card-text text-secondary-subtle">By Yaseema Booker</div>
+                                            </div>
+                                            <div class="wish rounded-circle bg-light position-absolute p-3">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </div>
+                                        </div>
+                                        <div class="card border-0 shadow">
+                                            <img src="photos/p3.png" alt="card-image h-25" class="img-fluid card-img-top rounded">
+                                            <div class="card-body">
+                                                <div class="card-title fw-bold fs-3">About Self Love</div>
+                                                <div class="card-text text-secondary-subtle">By Yaseema Booker</div>
+                                            </div>
+                                            <div class="wish rounded-circle bg-light position-absolute p-3">
+                                                <i class="fa-solid fa-heart"></i>
+                                            </div>
+                                        </div>
+                                       
+                                   
+                                    </div>
+                                </div>
+                            </div>
+
+                          
+
+
+
+
+
+
+                            <button class="carousel-control-prev" type="button" data-bs-target="#card-slide1" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                              </button>
+                              <button class="carousel-control-next" type="button" data-bs-target="#card-slide1" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                              </button>
+                            
+                        </div>
+
+                    </div>
+                    <div class="modal modal-fade" id="modal">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <img src="photos/p1.png" alt="photo" class="img-fluid modal-img">
+                                <button class="btn btn-secondary play" >play</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+ <script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script>
+<script src="portal.js"></script>
+
+</body>
+</html>

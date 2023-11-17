@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    \
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+   
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid login">
+
+        <div class="container height">
+            <div class="row bg-light mt-2">
+                <div class="col-6 col-md-6 img ">
+                    <img src="photos/pic1.png" alt="pic" class="img-fluid">
+                </div>
+                <div class="col-12 col-md-6 text bg-light">
+                        
+                    <div class="logo text-center text-dark fs-1 mt-5 animate__animated animate__backInDown">
+                        <h1>Music Site</h1>
+                        <h3 class=" display-5 text-center mt-5">WElCOME TO OUR MUSIC SITE</h3>
+                    </div>
+                    <form action="/action.php"onsubmit="logIn()">
+                        <div class="i1 ">
+                            <div class="form-floating mt-5 f1" id="input1">
+                                <input type="text" id="user" name="user"placeholder="UserName & Email" class="form-control border-0 border-bottom bg-transperent"onkeyup="UserInput()">
+                                <Label for="user">UserName & Email</Label>
+                                <span class="mt-1 text-danger px-3">UserName is too small</span>
+                                <span class="mt-1 text-warning px-3 email">Its not an email</span>
+    
+                            </div>
+                            <div class="form-floating mt-5 f1" id="input2">
+                                 <input type="Password" id="user" name="user"placeholder="Password" class="form-control border-0 border-bottom bg-transperent type"onkeyup="PasswordInput()" >
+                                <Label for="user">Password</Label>
+                                <div class="eye-on "id="eye-on" onclick="eyeToggle()"><i class="fa-solid fa-eye"></i></div>
+                                <div class="eye-off"id="eye-off"onclick="eyeToggle()"><i class="fa-solid fa-eye-slash"></i></div>
+                                <span class="mt-1 text-danger px-3">Password is too small</span>
+                            </div>
+                        </div>
+                       
+
+                        <div class="d-grid w-50 mx-auto my-5">
+                            <button class="btn btn-dark btn-large rounded-pill">
+                                SignIn
+
+                            </button>
+                            
+                            <button class="btn btn-dark btn-large rounded-pill mt-5">
+                                SignUp
+
+                            </button>
+
+                        </div>
+                       
+                    </form>
+                    <p class="text-dark text-center my-3">New to music site?<a href="#" class="text-success">Create New</a><p>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

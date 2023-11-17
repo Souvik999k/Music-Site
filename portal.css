@@ -1,0 +1,136 @@
+.logo {
+  font-family: 'Satisfy', cursive;
+  margin-bottom: 20%;
+  font-size: 32px;
+}
+
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30%;
+}
+
+.home:hover {
+  color: #f86300;
+}
+
+.home.focus {
+  color: #f86300;
+  width: 150px;
+  outline: 2px solid #f70707;
+  gap: 5%;
+}
+
+.icon {
+  padding-left: 10%;
+}
+
+.p1 {
+  margin-right: 20%;
+}
+
+.menu h6 {
+  color: #797979;
+}
+
+.user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 5%;
+}
+
+.click {
+  position: relative;
+  height: 50px;
+  width: 60px;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+}
+
+.click #search {
+  background: white;
+  border: 0;
+  font-size: 18px;
+  padding: 0 5px;
+  height: 50px;
+  width: 50px;
+  -webkit-transition: width 0.3s ease;
+  transition: width 0.3s ease;
+  position: absolute;
+  left: 15%;
+  right: 0;
+}
+
+.click #search:focus {
+  outline: none;
+}
+
+.click .btn {
+  background: white;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50px;
+  width: 60px;
+  font-size: 24px;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+.click .btn:focus {
+  outline: none;
+}
+
+.click.active {
+  width: 450px;
+}
+
+.click.active #search {
+  width: 450px;
+}
+
+.click.active .input {
+  width: 450px;
+  -webkit-transform: translateX(-60px);
+          transform: translateX(-60px);
+}
+
+.wish {
+  top: 5%;
+  right: 10%;
+  display: none;
+  cursor: pointer;
+  color: red;
+}
+
+.card:hover .wish {
+  display: block;
+}
+
+.body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.right {
+  height: 100%;
+  overflow-y: auto;
+}
+/*# sourceMappingURL=portal.css.map */
